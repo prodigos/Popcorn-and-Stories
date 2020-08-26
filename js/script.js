@@ -6,12 +6,11 @@ $(".submit").click(() => {
   $.ajax({
     url: `http://www.omdbapi.com/?apikey=${key}&s=${userInput}`,
   }).done((res) => {
-      // let moviePlot = res.plot;
-      // let movieRatings = res.ratings;
-      let movieRes = res.search;
-      debugger;
-      $.each(movieRes, (i, e) => {
-          let moviePoster = e.poster;
+    // let moviePlot = res.plot;
+    // let movieRatings = res.ratings;
+    let movieRes = res.Search;
+    $.each(movieRes, (i, e) => {
+      let moviePoster = e.Poster;
       $(".displayPoster").append(`<img src="${moviePoster}"/>`);
     });
     // $(".displayPoster").
