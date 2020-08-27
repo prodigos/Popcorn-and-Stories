@@ -6,16 +6,15 @@ $(".submit").click(() => {
   $.ajax({
     url: `http://www.omdbapi.com/?apikey=${key}&s=${userInput}`,
   }).done((res) => {
-    // let moviePlot = res.plot;
-    // let movieRatings = res.ratings;
+    $(".displayPoster").empty();
     let movieRes = res.Search;
     $.each(movieRes, (i, e) => {
       let moviePoster = e.Poster;
-      $(".displayPoster").append(`<img src="${moviePoster}"/>`);
+      let movieYear = e.Year;
+      let movieTitle = e.Title;
+      $(".displayPoster").append(
+        `<img src="${moviePoster}"/><p>Movie Title: ${movieTitle}</p> <p>Release Year: ${movieYear}</p>`
+      );
     });
-    // $(".displayPoster").
-    // $(".display").empty();
-    // let movieData = res.data;
-    // console.log(movieData);
   });
 });
