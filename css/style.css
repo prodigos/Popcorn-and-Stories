@@ -4,10 +4,10 @@ nav {
     background-color: darkgoldenrod;
 }
 
-.aside {
-    background-color: darkgreen;
-}
-
 .movieDisplay {
     background-color: darkslateblue;
+}
+
+.movieDisplay > p {
+    font-family: cursive;
 }

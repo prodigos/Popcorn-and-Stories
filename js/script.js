@@ -13,7 +13,7 @@ $(".submit").click(() => {
       let movieYear = e.Year;
       let movieTitle = e.Title;
       $(".displayPoster").append(
-        `<img src="${moviePoster}"/><p>Movie Title: ${movieTitle}</p> <p>Release Year: ${movieYear}</p>`
+        `<img src="${moviePoster}" class="img-fluid rounded-lg" alt="Responsive image"/><p>Movie Title: ${movieTitle}</p> <p>Release Year: ${movieYear}</p>`
       );
     });
   });
