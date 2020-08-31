@@ -4,6 +4,18 @@ nav {
   /* background-color: darkgoldenrod; */
 }
 
+body {
+    font-family: 'Righteous', cursive;
+}
+
+.page-header {
+    margin: 5rem;
+    text-align: center;
+    background-image: url("../resources/georgia-vagim-ny-lHmsHYHk-unsplash.jpg")
+
+}
+
+
 .movieDisplay {
   background-color: darkslateblue;
 }
@@ -31,11 +43,12 @@ nav {
     /* flex-basis: inherit; */
 }
 
-/* .input {
+.input {
     display: flex;
-    justify-content: space-between;
-    margin: auto;
-} */
+    align-items: start;
+    padding: 20px;
+    justify-content: space-evenly;
+}
 
 /* img {
   size: 50px;
