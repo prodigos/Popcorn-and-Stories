@@ -1,13 +1,42 @@
 nav {
-    display: flex;
-    
-    background-color: darkgoldenrod;
+  display: flex;
+
+  /* background-color: darkgoldenrod; */
 }
 
 .movieDisplay {
-    background-color: darkslateblue;
+  background-color: darkslateblue;
 }
 
 .movieDisplay > p {
-    font-family: cursive;
+  font-family: cursive;
 }
+
+.displayPoster {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.displayPoster > img {
+    width: 20%;
+    margin: 2% 2.5%;
+    border-radius: 3px;
+}
+
+.displayPoster > figcaption {
+    
+    width: 10rem;
+    padding: 15px;
+    /* flex-basis: inherit; */
+}
+
+/* .input {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+} */
+
+/* img {
+  size: 50px;
+} */
